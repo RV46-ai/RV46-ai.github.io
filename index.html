@@ -1,0 +1,328 @@
+<title>Rajesh Veedu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#02080f; --bg2:#070d16; --card:#0b1220; --line:#16202e; --line2:#1e2b3d;
+    --cream:#f0eee6; --dim:#9aa6b6; --dimmer:#6b7789;
+    --cyan:#6ce0ff; --green:#4ddb8e; --amber:#f5c330; --coral:#ff6040;
+    --mark:#2f9ec9;
+    --sans:'Inter',system-ui,-apple-system,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--cream);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--cyan);color:var(--bg)}
+
+  .nav{position:sticky;top:0;z-index:50;background:rgba(2,8,15,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav-in{max-width:1120px;margin:0 auto;padding:.85rem 1.6rem;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-weight:800;font-size:1rem;letter-spacing:-.02em}
+  .logo b{color:var(--cyan);font-weight:800}
+  .nav-r{font-family:var(--mono);font-size:.68rem;color:var(--cream)}
+  .nav-cta{margin-left:1.1rem;background:var(--cyan);color:var(--bg);font-weight:700;font-size:.74rem;padding:.42rem .85rem;border-radius:3px;text-decoration:none;white-space:nowrap}
+  .nav-right{display:flex;align-items:center}
+
+  .wrap{max-width:1120px;margin:0 auto;padding:0 1.6rem}
+  .sec{padding:4.5rem 0;border-bottom:1px solid var(--line)}
+  .kicker{font-family:var(--mono);font-size:1.05rem;color:var(--cyan);margin-bottom:1.3rem}
+  h1{font-size:clamp(2.1rem,5.6vw,3.9rem);font-weight:800;line-height:1.03;letter-spacing:-.035em;margin-bottom:1.3rem;max-width:16em}
+  h2{font-size:clamp(1.5rem,3.2vw,2.15rem);font-weight:800;line-height:1.12;letter-spacing:-.03em;margin-bottom:.7rem;max-width:18em}
+  h3{font-size:1.02rem;font-weight:700;letter-spacing:-.01em;margin-bottom:.3rem}
+  .lede{font-size:1.05rem;color:var(--dim);max-width:44em;margin-bottom:2.4rem}
+  .lede b{color:var(--cream);font-weight:500}
+  em.c{font-style:normal;color:var(--cyan)}
+  em.g{font-style:normal;color:var(--green)}
+  em.a{font-style:normal;color:var(--amber)}
+
+  /* hero */
+  .hero{padding:5.5rem 0 4rem;border-bottom:1px solid var(--line)}
+  .hero .amberline{color:var(--amber);font-size:1.02rem;max-width:34em;margin-bottom:1.5rem}
+  .hero .big{font-size:clamp(1.15rem,2.3vw,1.5rem);font-weight:600;color:var(--cream);max-width:30em;line-height:1.35;margin-bottom:1.6rem;letter-spacing:-.02em}
+  .hero .body{font-size:1.05rem;color:var(--dim);max-width:40em}
+  .hero .body b{color:var(--cream);font-weight:500}
+
+  /* the device */
+  .rows{border-top:1px solid var(--line)}
+  .r{border-bottom:1px solid var(--line);padding:2.2rem 0;display:grid;grid-template-columns:1fr 1.35fr;gap:2.6rem;align-items:start}
+  .r-cv{position:relative}
+  .r-cv .tag{font-family:var(--mono);font-size:.64rem;color:var(--dimmer);margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem}
+  .r-cv .tag span{color:var(--coral)}
+  .r-cv .line{font-size:1.02rem;color:var(--dimmer);line-height:1.45;padding-left:.95rem;border-left:2px solid var(--line2)}
+  .r-cv .verdict{font-family:var(--mono);font-size:.64rem;color:var(--dimmer);margin-top:.75rem;padding-left:.95rem}
+  .r-real .tag{font-family:var(--mono);font-size:.64rem;color:var(--green);margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem}
+  .r-real p{font-size:1.02rem;color:var(--cream);line-height:1.62}
+  .r-real p + p{margin-top:.75rem}
+  .r-real .out{margin-top:1.05rem;display:flex;flex-wrap:wrap;gap:.55rem}
+  .pill{font-family:var(--mono);font-size:.7rem;color:var(--cyan);border:1px solid var(--line2);border-radius:2px;padding:.32rem .6rem;background:var(--bg2)}
+  .pill.g{color:var(--green)}
+
+  /* stat band */
+  .band{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:2.6rem}
+  .b{background:var(--bg2);padding:1.5rem 1.3rem}
+  .bv{font-size:2.05rem;font-weight:800;letter-spacing:-.035em;line-height:1;color:var(--cream)}
+  .bv.c{color:var(--cyan)} .bv.g{color:var(--green)}
+  .bl{font-size:.83rem;color:var(--dim);margin-top:.55rem;line-height:1.4}
+
+  /* charts */
+  .chart{margin-top:.4rem}
+  .ct{font-family:var(--mono);font-size:.66rem;color:var(--dim);margin-bottom:1.5rem}
+  .plot{position:relative}
+  .row{display:grid;grid-template-columns:220px 1fr;gap:1.2rem;align-items:center;margin-bottom:.6rem}
+  .rn{font-size:.86rem;color:var(--cream);text-align:right;line-height:1.3}
+  .rn em{display:block;font-style:normal;color:var(--dimmer);font-size:.72rem;margin-top:.15rem}
+  .track{position:relative;height:26px;display:flex;align-items:center;padding-right:4.6rem}
+  .bar{height:24px;background:var(--mark);border-radius:0 3px 3px 0;transition:background .15s}
+  .bar:hover{background:var(--cyan)}
+  .bv2{font-size:1rem;font-weight:700;color:var(--cream);margin-left:.7rem;white-space:nowrap;letter-spacing:-.02em}
+  .ax{display:grid;grid-template-columns:220px 1fr;gap:1.2rem;margin-top:.7rem}
+  .axl{position:relative;height:1.3rem;border-top:1px solid var(--line2);margin-right:4.6rem}
+  .tick{position:absolute;top:.32rem;font-family:var(--mono);font-size:.62rem;color:var(--dimmer);transform:translateX(-50%)}
+  .grids{position:absolute;inset:0 4.6rem 1.3rem 0;margin-left:calc(220px + 1.2rem);pointer-events:none}
+  .gl{position:absolute;top:0;bottom:0;width:1px;background:var(--line)}
+
+  /* dots */
+  .dd{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-top:.5rem}
+  .dh{font-family:var(--mono);font-size:.66rem;color:var(--dimmer);margin-bottom:.5rem}
+  .dn{font-size:1.9rem;font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:1rem}
+  .dn span{display:block;font-size:.8rem;font-weight:400;color:var(--dim);margin-top:.4rem;letter-spacing:0}
+  .dots{display:grid;grid-template-columns:repeat(20,1fr);gap:4px;max-width:330px}
+  .dots i{display:block;width:100%;aspect-ratio:1;border-radius:50%;background:var(--line2)}
+  .dots.on i{background:var(--cyan)}
+
+  /* flow */
+  .flow{border:1px solid var(--line);background:var(--bg2);padding:1.7rem 1.4rem 1rem;overflow-x:auto;margin-top:.5rem}
+  .flow svg{display:block;min-width:660px;width:100%;height:auto}
+
+  /* cards */
+  .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .g2{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .cd{background:var(--bg2);padding:1.7rem 1.45rem}
+  .cd .lab{font-family:var(--mono);font-size:.63rem;color:var(--cyan);margin-bottom:.75rem}
+  .cd .lab.g{color:var(--green)} .cd .lab.a{color:var(--amber)}
+  .cd p{font-size:.92rem;color:var(--dim);line-height:1.62}
+  .cd p + p{margin-top:.7rem}
+  .cd p b{color:var(--cream);font-weight:600}
+
+  /* scale */
+  .scale{position:relative;height:104px;margin-top:1.6rem}
+  .sx{position:absolute;left:0;right:0;top:68px;height:1px;background:var(--line2)}
+  .st{position:absolute;top:76px;font-family:var(--mono);font-size:.62rem;color:var(--dimmer);transform:translateX(-50%);white-space:nowrap}
+  .sm{position:absolute;top:0;height:74px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:.4rem}
+  .sm b{font-size:1.1rem;font-weight:800;letter-spacing:-.03em;color:var(--cream);white-space:nowrap}
+  .sm em{font-style:normal;font-size:.75rem;color:var(--dim);white-space:nowrap}
+  .sm i{display:block;width:11px;height:11px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px var(--bg)}
+
+  /* timeline */
+  .tl{border-top:1px solid var(--line);margin-top:.4rem}
+  .tr{display:grid;grid-template-columns:130px 1fr;gap:1.2rem;align-items:center;padding:.75rem 0;border-bottom:1px solid var(--line)}
+  .ty{font-family:var(--mono);font-size:.66rem;color:var(--dimmer);text-align:right}
+  .tb{font-size:.92rem;color:var(--cream)}
+  .tb span{color:var(--dim)}
+
+  .tgl{font-family:var(--mono);font-size:.66rem;color:var(--dimmer);background:none;border:1px solid var(--line2);border-radius:2px;cursor:pointer;padding:.5rem .8rem;margin-top:1.6rem}
+  .tgl:hover{color:var(--cyan);border-color:var(--cyan)}
+  table.d{border-collapse:collapse;width:100%;max-width:42em;margin-top:1.3rem;font-size:.87rem}
+  table.d th,table.d td{text-align:left;padding:.5rem 1rem .5rem 0;border-bottom:1px solid var(--line)}
+  table.d th{font-family:var(--mono);font-size:.62rem;color:var(--dimmer);font-weight:400}
+  table.d td{color:var(--dim)} table.d td:first-child{color:var(--cream)}
+  table.d td.n{font-variant-numeric:tabular-nums;text-align:right;color:var(--cream);font-weight:600}
+  .hide{display:none}
+
+  .cta{padding:5rem 0;text-align:center}
+  .cta h2{margin:0 auto .9rem}
+  .cta p{color:var(--dim);max-width:34em;margin:0 auto 2rem;font-size:1.02rem}
+  .btn{display:inline-block;background:var(--cyan);color:var(--bg);font-weight:700;font-size:.95rem;padding:.95rem 1.9rem;border-radius:3px;text-decoration:none;transition:transform .12s}
+  .btn:hover{transform:translateY(-1px)}
+  .fine{font-size:.86rem;color:var(--dimmer);margin-top:1.4rem}
+  .fine a{color:var(--cyan);text-decoration:none}
+  footer{padding:2.5rem 0 4rem;font-family:var(--mono);font-size:.66rem;color:var(--dimmer);text-align:center;line-height:2}
+
+  @media(max-width:880px){
+    .r{grid-template-columns:1fr;gap:1.4rem}
+    .band,.g3,.g2{grid-template-columns:1fr 1fr}
+    .dd{grid-template-columns:1fr;gap:2rem}
+    .row,.ax{grid-template-columns:112px 1fr;gap:.7rem}
+    .grids{margin-left:calc(112px + .7rem);inset:0 3.2rem 1.3rem 0}
+    .track{padding-right:3.2rem}.axl{margin-right:3.2rem}
+    .rn{font-size:.74rem}.rn em{font-size:.66rem}
+    .tr{grid-template-columns:96px 1fr;gap:.7rem}
+    .dots{max-width:100%}
+  }
+</style>
+
+<div class="nav"><div class="nav-in">
+  <span class="logo">Rajesh Veedu</span>
+  <span class="nav-right"><span class="nav-r">Customer Success &amp; Operations</span><a class="nav-cta" href="#start">Start here</a></span>
+</div></div>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="kicker">Customer success and operations &middot; Bangalore, working globally</div>
+    <h1>I build the system that sees churn coming, before it costs you the round.</h1>
+    <p class="amberline">For Series A and B SaaS founders losing customers faster than they can replace them, and for those setting up customer success for the first time.</p>
+    <div class="band" style="margin-top:2.2rem">
+      <div class="b"><div class="bv c">18%</div><div class="bl">Churn reduction</div></div>
+      <div class="b"><div class="bv c">+12%</div><div class="bl">Net revenue retention</div></div>
+      <div class="b"><div class="bv g">3</div><div class="bl">Customer success organisations built or rebuilt</div></div>
+      <div class="b"><div class="bv">$10M+</div><div class="bl">ARR SaaS company, most recent engagement</div></div>
+    </div>
+  </div>
+
+  <!-- CHURN -->
+  <div class="sec">
+    <div class="kicker">Reduced churn every time, at every engagement</div>
+    <div class="chart">
+      <div class="ct">percentage reduction, first year of the new operating model</div>
+      <div class="plot">
+        <div class="grids"><div class="gl" style="left:0%"></div><div class="gl" style="left:25%"></div><div class="gl" style="left:50%"></div><div class="gl" style="left:75%"></div><div class="gl" style="left:100%"></div></div>
+        <div class="row"><div class="rn">Replicon<em>global SaaS</em></div><div class="track"><div class="bar" style="width:98.5%"></div><span class="bv2">19.7%</span></div></div>
+        <div class="row"><div class="rn">SaaS startup<em>$10M+ ARR, consulting client</em></div><div class="track"><div class="bar" style="width:90%"></div><span class="bv2">18%</span></div></div>
+        <div class="row"><div class="rn">Kaseya<em>worldwide, IT management</em></div><div class="track"><div class="bar" style="width:60%"></div><span class="bv2">12%</span></div></div>
+        <div class="ax"><div></div><div class="axl"><span class="tick" style="left:0%">0</span><span class="tick" style="left:25%">5</span><span class="tick" style="left:50%">10</span><span class="tick" style="left:75%">15</span><span class="tick" style="left:100%">20</span></div></div>
+      </div>
+    </div>
+    <p class="lede" style="margin-top:1.8rem;margin-bottom:0"><a href="#start" style="color:var(--cyan)">Ten questions to identify the issue.</a></p>
+  </div>
+
+  <!-- THE SYSTEM -->
+  <div class="sec">
+    <div class="kicker">The system</div>
+    <div class="flow">
+      <svg viewBox="0 0 960 214" role="img" aria-label="Four customer signals feed one score, giving ninety days of warning, triggering a play, ending in a customer kept or growth found.">
+        <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="none" stroke="#3a4a5e" stroke-width="1.5"/></marker></defs>
+        <text x="12" y="20" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#6b7789">signals you already have</text>
+        <g font-family="Inter, sans-serif" font-size="13" fill="#f0eee6">
+          <rect x="12" y="36" width="152" height="30" rx="3" fill="#0b1220" stroke="#1e2b3d"/><text x="28" y="55">product usage</text>
+          <rect x="12" y="74" width="152" height="30" rx="3" fill="#0b1220" stroke="#1e2b3d"/><text x="28" y="93">survey sentiment</text>
+          <rect x="12" y="112" width="152" height="30" rx="3" fill="#0b1220" stroke="#1e2b3d"/><text x="28" y="131">tenure</text>
+          <rect x="12" y="150" width="152" height="30" rx="3" fill="#0b1220" stroke="#1e2b3d"/><text x="28" y="169">account value</text>
+        </g>
+        <g stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)">
+          <path d="M168,51 C204,51 204,108 230,108"/><path d="M168,89 C204,89 204,108 230,108"/>
+          <path d="M168,127 C204,127 204,108 230,108"/><path d="M168,165 C204,165 204,108 230,108"/>
+        </g>
+        <rect x="236" y="80" width="140" height="56" rx="3" fill="#6ce0ff"/>
+        <text x="306" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#02080f">health score</text>
+        <text x="306" y="122" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#0a3a4d">built</text>
+        <path d="M380,108 L420,108" stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)"/>
+        <rect x="426" y="80" width="146" height="56" rx="3" fill="#0b1220" stroke="#f5c330" stroke-width="1.5"/>
+        <text x="499" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#f5c330">60 to 90 days</text>
+        <text x="499" y="122" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#9aa6b6">of warning</text>
+        <path d="M576,108 L616,108" stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)"/>
+        <rect x="622" y="80" width="112" height="56" rx="3" fill="#0b1220" stroke="#1e2b3d"/>
+        <text x="678" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#f0eee6">a play</text>
+        <text x="678" y="122" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#6b7789">per risk tier</text>
+        <g stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)">
+          <path d="M738,100 C772,100 772,62 804,62"/><path d="M738,116 C772,116 772,154 804,154"/>
+        </g>
+        <rect x="810" y="40" width="140" height="44" rx="3" fill="#0b1220" stroke="#4ddb8e"/>
+        <text x="880" y="67" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#4ddb8e">customer kept</text>
+        <rect x="810" y="132" width="140" height="44" rx="3" fill="#0b1220" stroke="#6ce0ff"/>
+        <text x="880" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#6ce0ff">expansion found</text>
+        <text x="810" y="198" font-family="Inter, sans-serif" font-size="12.5" fill="#6b7789">one signal, two answers</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- 90 DAYS -->
+  <div class="sec">
+    <div class="kicker">How the work runs</div>
+    <div class="g3">
+      <div class="cd"><div class="lab">First</div><h3>Diagnose</h3>
+        <p>Who churned, when, why. The leading indicators already in your data. Where the journey loses people.</p></div>
+      <div class="cd"><div class="lab">Then</div><h3>Build the warning system</h3>
+        <p>Health score on your data, not a template. Risk tiers. A specific play attached to each tier.</p></div>
+      <div class="cd"><div class="lab">Until it runs without me</div><h3>Execute and tune</h3>
+        <p>Train the team, run proactive outreach, track the save rate, refine against what actually happened.</p></div>
+    </div>
+  </div>
+
+  <!-- OPERATIONS -->
+  <div class="sec">
+    <div class="kicker">Operations, which is most of what I actually do</div>
+    <h2>Ten years of it, inside customer success job titles and outside them</h2>
+
+    <p class="lede" style="margin-bottom:1.2rem">Work a renewals or CS manager does not normally touch.</p>
+    <div class="band">
+      <div class="b"><div class="bv c">90%</div><div class="bl">Of small-business renewals automated to run without a person</div></div>
+      <div class="b"><div class="bv c">8 &rarr; 4</div><div class="bl">Renewals team, at 50% higher efficiency, after the process was rebuilt</div></div>
+      <div class="b"><div class="bv g">12% &rarr; 8%</div><div class="bl">Forecast error, via an annual price increase matrix built on lifecycle and behaviour</div></div>
+      <div class="b"><div class="bv g">20</div><div class="bl">Days earlier that renewals started closing</div></div>
+    </div>
+
+    <p class="lede" style="margin:2rem 0 1.2rem">Systems and functions built, not bought.</p>
+    <div class="band">
+      <div class="b"><div class="bv c">2</div><div class="bl">Tools built on Salesforce: the health scoring matrix and the churn forecasting tool</div></div>
+      <div class="b"><div class="bv c">20 hrs</div><div class="bl">Daily duplication removed by a billing operations function that did not exist before</div></div>
+      <div class="b"><div class="bv g">40+</div><div class="bl">Admin hours removed weekly by a Salesforce migration and billing automation</div></div>
+      <div class="b"><div class="bv g">1</div><div class="bl">Source of truth, after moving sales data out of spreadsheets into Salesforce with the BI team</div></div>
+    </div>
+
+    <p class="lede" style="margin:2rem 0 1.2rem">Org design, and operations with no customer success in them at all.</p>
+    <div class="band">
+      <div class="b"><div class="bv c">160 &rarr; 80</div><div class="bl">Accounts per manager, 12 support roles rebuilt as 9 CSMs in pods</div></div>
+      <div class="b"><div class="bv c">28%</div><div class="bl">Operating costs removed from a relocation business: onboarding, training and billing workflows</div></div>
+      <div class="b"><div class="bv g">15%</div><div class="bl">Throughput capacity added on a food manufacturer's factory floor, via Lean Six Sigma</div></div>
+      <div class="b"><div class="bv g">15%</div><div class="bl">Faster product iteration, from an operating model spanning success, ad operations, product and marketing</div></div>
+    </div>
+
+    <p class="lede" style="margin:2rem 0 1.2rem">And in the consulting engagements: the relocation firm, and the adtech and martech client.</p>
+    <div class="band">
+      <div class="b"><div class="bv">25%</div><div class="bl">Manual workload removed, twice: at Spiceworks and for an adtech client</div></div>
+      <div class="b"><div class="bv">30%</div><div class="bl">Team efficiency gain at Spiceworks, through workflow automation</div></div>
+      <div class="b"><div class="bv">4</div><div class="bl">Roles taken out of the cost base by merging sales into customer success, while sales rose 74.24%</div></div>
+      <div class="b"><div class="bv">BB</div><div class="bl">Lean Six Sigma Black Belt and Green Belt</div></div>
+    </div>
+  </div>
+
+  <!-- REVENUE -->
+  <div class="sec">
+    <div class="kicker">Retention is only half of it</div>
+    <div class="band">
+      <div class="b"><div class="bv c">$704K</div><div class="bl">Expansion revenue in one quarter at Kaseya, 114% of quota, with quota beaten every quarter after</div></div>
+      <div class="b"><div class="bv c">$580K</div><div class="bl">A services line built from nothing, against a $200K target</div></div>
+      <div class="b"><div class="bv g">22%</div><div class="bl">Enterprise revenue expansion, Replicon</div></div>
+      <div class="b"><div class="bv">$24M</div><div class="bl">Portfolio run with profit and loss ownership</div></div>
+    </div>
+    <p class="lede" style="margin-top:1.8rem;margin-bottom:0">Five years of negative net growth at Replicon turned positive inside my first twelve months. Same health score, same playbook. The score that flags an account drifting is the score that flags one ready to buy.</p>
+  </div>
+
+  <!-- ENGAGE -->
+  <div class="sec">
+    <div class="kicker">What I build</div>
+    <div class="band" style="margin-bottom:2.4rem">
+      <div class="b"><div class="bv c">01</div><div class="bl">Customer success org, set up from scratch</div></div>
+      <div class="b"><div class="bv c">02</div><div class="bl">Churn reduction</div></div>
+      <div class="b"><div class="bv g">03</div><div class="bl">Process design</div></div>
+      <div class="b"><div class="bv g">04</div><div class="bl">Health scoring</div></div>
+    </div>
+    <div class="band" style="margin-bottom:2.4rem">
+      <div class="b"><div class="bv">05</div><div class="bl">Playbook creation</div></div>
+      <div class="b" style="grid-column:span 3"><div class="bl" style="margin-top:.4rem">Fractional or project based, for Series A and B SaaS companies of 10 to 100 people.</div></div>
+    </div>
+    <div class="kicker">Three ways to engage</div>
+    <div class="g3">
+      <div class="cd"><div class="lab">Diagnostic</div><h3>CS Audit</h3>
+        <p>Health scoring logic, playbook coverage, team structure, tool configuration, renewal process, retention metrics. A prioritised list of what to fix first.</p></div>
+      <div class="cd"><div class="lab">Execution</div><h3>CS Build</h3>
+        <p>The function built where none exists, or rebuilt where it stopped working. Team design, tooling, playbooks, health scoring, renewal motion. I embed rather than advise.</p></div>
+      <div class="cd"><div class="lab">Ongoing</div><h3>CS Advisory</h3>
+        <p>A senior counterpart for your CS lead. Metrics review, hiring decisions, escalation support, board-ready reporting.</p></div>
+    </div>
+  </div>
+
+  <div class="cta" id="start">
+    <h2>Ten questions first</h2>
+    <p>Answer them and I will know your situation before we speak. I shall send you a calendar invite to discuss once I review your responses.</p>
+    <a class="btn" href="https://forms.gle/zu3pL3BEo4jsPHqo8">Answer the ten questions</a>
+    <p class="fine">Bangalore and India via <a href="https://topmate.io/rajeshveedu">Topmate</a> &middot; international via <a href="https://clarity.fm/rajeshveedu">Clarity.fm</a></p>
+  </div>
+
+  <footer>
+    Rajesh Veedu &middot; 22 years customer-facing, 15 in customer success and operations<br>
+    Lean Six Sigma Black Belt and Green Belt &middot; HubSpot Certified &middot; CCSM Level 3 coursework
+  </footer>
+</div>
