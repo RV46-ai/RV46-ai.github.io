@@ -6,8 +6,8 @@
   :root{
     --bg:#02080f; --bg2:#070d16; --card:#0b1220; --line:#16202e; --line2:#1e2b3d;
     --cream:#f0eee6; --dim:#9aa6b6; --dimmer:#6b7789;
-    --cyan:#6ce0ff; --green:#4ddb8e; --amber:#f5c330; --coral:#ff6040;
-    --mark:#2f9ec9;
+    --cyan:#4d82d6; --green:#5aa469; --amber:#5aa469; --coral:#5aa469;
+    --mark:#4d82d6;
     --sans:'Inter',system-ui,-apple-system,sans-serif;
     --mono:'IBM Plex Mono',ui-monospace,monospace;
   }
@@ -131,7 +131,7 @@
   .hide{display:none}
 
   .cta{padding:5rem 0;text-align:center}
-  .cta h2{margin:0 auto .9rem}
+  .cta h2{margin:0 auto .9rem;font-size:clamp(1.8rem,3.9vw,2.6rem)}
   .cta p{color:var(--dim);max-width:34em;margin:0 auto 2rem;font-size:1.02rem}
   .btn{display:inline-block;background:var(--cyan);color:var(--bg);font-weight:700;font-size:.95rem;padding:.95rem 1.9rem;border-radius:3px;text-decoration:none;transition:transform .12s}
   .btn:hover{transform:translateY(-1px)}
@@ -175,7 +175,7 @@
   <div class="sec">
     <div class="kicker">Reduced churn every time, at every engagement</div>
     <div class="chart">
-      <div class="ct">percentage reduction, first year of the new operating model</div>
+      <div class="ct">Percentage reduction, first year of the new operating model</div>
       <div class="plot">
         <div class="grids"><div class="gl" style="left:0%"></div><div class="gl" style="left:25%"></div><div class="gl" style="left:50%"></div><div class="gl" style="left:75%"></div><div class="gl" style="left:100%"></div></div>
         <div class="row"><div class="rn">Replicon<em>global SaaS</em></div><div class="track"><div class="bar" style="width:98.5%"></div><span class="bv2">19.7%</span></div></div>
@@ -193,36 +193,36 @@
     <div class="flow">
       <svg viewBox="0 0 960 214" role="img" aria-label="Four customer signals feed one score, giving ninety days of warning, triggering a play, ending in a customer kept or growth found.">
         <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="none" stroke="#3a4a5e" stroke-width="1.5"/></marker></defs>
-        <text x="12" y="20" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#6b7789">signals you already have</text>
+        <text x="12" y="20" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#6b7789">Signals you already have</text>
         <g font-family="Inter, sans-serif" font-size="13" fill="#f0eee6">
-          <rect x="12" y="36" width="152" height="30" rx="3" fill="#0b1220" stroke="#1e2b3d"/><text x="28" y="55">product usage</text>
-          <rect x="12" y="74" width="152" height="30" rx="3" fill="#0b1220" stroke="#1e2b3d"/><text x="28" y="93">survey sentiment</text>
-          <rect x="12" y="112" width="152" height="30" rx="3" fill="#0b1220" stroke="#1e2b3d"/><text x="28" y="131">tenure</text>
-          <rect x="12" y="150" width="152" height="30" rx="3" fill="#0b1220" stroke="#1e2b3d"/><text x="28" y="169">account value</text>
+          <rect x="12" y="36" width="152" height="30" rx="3" fill="#0b1220" stroke="#1e2b3d"/><text x="28" y="55">Product usage</text>
+          <rect x="12" y="74" width="152" height="30" rx="3" fill="#0b1220" stroke="#1e2b3d"/><text x="28" y="93">Survey sentiment</text>
+          <rect x="12" y="112" width="152" height="30" rx="3" fill="#0b1220" stroke="#1e2b3d"/><text x="28" y="131">Tenure</text>
+          <rect x="12" y="150" width="152" height="30" rx="3" fill="#0b1220" stroke="#1e2b3d"/><text x="28" y="169">Account value</text>
         </g>
         <g stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)">
           <path d="M168,51 C204,51 204,108 230,108"/><path d="M168,89 C204,89 204,108 230,108"/>
           <path d="M168,127 C204,127 204,108 230,108"/><path d="M168,165 C204,165 204,108 230,108"/>
         </g>
-        <rect x="236" y="80" width="140" height="56" rx="3" fill="#6ce0ff"/>
-        <text x="306" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#02080f">health score</text>
-        <text x="306" y="122" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#0a3a4d">built</text>
+        <rect x="236" y="80" width="140" height="56" rx="3" fill="#4d82d6"/>
+        <text x="306" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#02080f">Health score</text>
+        <text x="306" y="122" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#eaf0fb">Built</text>
         <path d="M380,108 L420,108" stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)"/>
-        <rect x="426" y="80" width="146" height="56" rx="3" fill="#0b1220" stroke="#f5c330" stroke-width="1.5"/>
-        <text x="499" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#f5c330">60 to 90 days</text>
-        <text x="499" y="122" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#9aa6b6">of warning</text>
+        <rect x="426" y="80" width="146" height="56" rx="3" fill="#0b1220" stroke="#5aa469" stroke-width="1.5"/>
+        <text x="499" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#5aa469">60 to 90 days</text>
+        <text x="499" y="122" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#9aa6b6">Of warning</text>
         <path d="M576,108 L616,108" stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)"/>
         <rect x="622" y="80" width="112" height="56" rx="3" fill="#0b1220" stroke="#1e2b3d"/>
-        <text x="678" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#f0eee6">a play</text>
-        <text x="678" y="122" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#6b7789">per risk tier</text>
+        <text x="678" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#f0eee6">A play</text>
+        <text x="678" y="122" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#6b7789">Per risk tier</text>
         <g stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)">
           <path d="M738,100 C772,100 772,62 804,62"/><path d="M738,116 C772,116 772,154 804,154"/>
         </g>
-        <rect x="810" y="40" width="140" height="44" rx="3" fill="#0b1220" stroke="#4ddb8e"/>
-        <text x="880" y="67" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#4ddb8e">customer kept</text>
-        <rect x="810" y="132" width="140" height="44" rx="3" fill="#0b1220" stroke="#6ce0ff"/>
-        <text x="880" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#6ce0ff">expansion found</text>
-        <text x="810" y="198" font-family="Inter, sans-serif" font-size="12.5" fill="#6b7789">one signal, two answers</text>
+        <rect x="810" y="40" width="140" height="44" rx="3" fill="#0b1220" stroke="#5aa469"/>
+        <text x="880" y="67" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#5aa469">Customer kept</text>
+        <rect x="810" y="132" width="140" height="44" rx="3" fill="#0b1220" stroke="#4d82d6"/>
+        <text x="880" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#4d82d6">Expansion found</text>
+        <text x="810" y="198" font-family="Inter, sans-serif" font-size="12.5" fill="#6b7789">One signal, two answers</text>
       </svg>
     </div>
   </div>
@@ -261,7 +261,7 @@
       <div class="b"><div class="bv g">1</div><div class="bl">Source of truth, after moving sales data out of spreadsheets into Salesforce with the BI team</div></div>
     </div>
 
-    <p class="lede" style="margin:2rem 0 1.2rem">Org design, and operations with no Customer Success in them at all.</p>
+    <p class="lede" style="margin:2rem 0 1.2rem">Organization design, and operations with no Customer Success in them at all.</p>
     <div class="band">
       <div class="b"><div class="bv c">160 &rarr; 80</div><div class="bl">Accounts per manager, 12 support roles rebuilt as 9 CSMs in pods</div></div>
       <div class="b"><div class="bv c">28%</div><div class="bl">Operating costs removed from a relocation business: onboarding, training and billing workflows</div></div>
@@ -303,12 +303,12 @@
     <div class="kicker">Operations with no Customer Success in it</div>
     <h2>Where the work had nothing to do with software or customers</h2>
     <p class="lede">Three engagements that needed operating systems built from nothing. None of them had a Customer Success function, and two had no software at all.</p>
-    <div class="g3">
+    <div class="g2">
       <div class="cd">
-        <div class="lab a">Food manufacturing</div>
+        <div class="lab a">Food manufacturing, operations design</div>
         <h3>A production floor with no roles and no rhythm</h3>
         <p>No defined roles, no production cadence, no inventory control, and a workforce that could not be trained from English documents. I designed the operating system around that constraint: photo-based consumption boards labelled in the local language, transparent bins with fill lines, visual recipe cards with no text, and a four-sheet inventory layer with reorder alerts behind them.</p>
-        <p>Eight to ten defined roles, a cross-training matrix, and a phased rollout that ran the old and new systems in parallel before switching over. <b>Throughput capacity rose 15%.</b></p>
+        <p>Eight to ten defined roles, a cross-training matrix, and a phased rollout running the old and new systems in parallel before switchover.</p>
       </div>
       <div class="cd">
         <div class="lab a">Vendor qualification</div>
@@ -321,6 +321,11 @@
         <h3>Five systems, none of them talking</h3>
         <p>Employee onboarding, training and billing all done by hand across Salesforce, Jobber, Appenate, Samsara and Slack. I mapped the workflows end to end and automated them, taking <b>28% out of operating costs</b>.</p>
         <p>Alongside it, a dispatch tool putting driver jobs into Slack as tappable tasks that fed status straight back into Salesforce, presented to the chief executive as the engagement closed.</p>
+      </div>
+      <div class="cd">
+        <div class="lab a">Food manufacturing, market and throughput</div>
+        <h3>Throughput capacity up 15%</h3>
+        <p>A separate engagement, a different client. Go-to-market strategy alongside a change management programme on the manufacturing operation itself, run as a Lean Six Sigma exercise. <b>Throughput capacity rose 15%.</b></p>
       </div>
     </div>
   </div>
@@ -339,8 +344,8 @@
 
   <div class="sec">
     <div class="kicker">How I build now</div>
-    <h2>I specify it, AI executes, I decide whether it ships</h2>
-    <p class="lede">I do not write the code. I write the specification, judge the output and own what goes out. Over two years the toolchain has changed three times and the method has not.</p>
+    <h2>How the product gets built</h2>
+    <p class="lede">I write the specification and review what comes back. I do not write the code. The toolchain has changed three times in two years; the working method has not.</p>
 
     <div class="band" style="margin-top:0">
       <div class="b"><div class="bv c">01</div><div class="bl">8090 Software Factory, where the product build started</div></div>
