@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rajesh Veedu</title>
+<meta name="description" content="Customer Success and Operations. I build the systems that retain and grow customers, and the operations underneath them.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rv46-ai.github.io/">
+<meta property="og:title" content="Rajesh Veedu">
+<meta property="og:description" content="Customer Success and Operations. I build the systems that retain and grow customers, and the operations underneath them.">
+<meta property="og:image" content="https://rv46-ai.github.io/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0e0b09; --bg2:#15100c; --card:#1b1510; --line:#2b2118; --line2:#3b2e22;
+    --cream:#f0eee6; --dim:#9aa6b6; --dimmer:#6b7789;
+    --cyan:#e0a458; --green:#5aa469; --amber:#5aa469; --coral:#d9635e;
+    --mark:#e0a458;
+    --sans:'Inter',system-ui,-apple-system,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--cream);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--cyan);color:var(--bg)}
+
+  .nav{position:sticky;top:0;z-index:50;background:rgba(2,8,15,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav-in{max-width:1120px;margin:0 auto;padding:.85rem 1.6rem;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-weight:800;font-size:1rem;letter-spacing:-.02em}
+  .logo b{color:var(--cyan);font-weight:800}
+  .nav-r{font-family:var(--mono);font-size:.68rem;color:var(--cream)}
+  .nav-cta{margin-left:1.1rem;background:var(--cyan);color:var(--bg);font-weight:700;font-size:.74rem;padding:.42rem .85rem;border-radius:3px;text-decoration:none;white-space:nowrap}
+  .nav-right{display:flex;align-items:center}
+
+  .wrap{max-width:1120px;margin:0 auto;padding:0 1.6rem}
+  .sec{padding:4.5rem 0;border-bottom:1px solid var(--line)}
+  .kicker{font-family:var(--mono);font-size:1.05rem;color:var(--cyan);margin-bottom:1.3rem}
+  h1{font-size:clamp(2.1rem,5.6vw,3.9rem);font-weight:800;line-height:1.03;letter-spacing:-.035em;margin-bottom:1.3rem;max-width:16em}
+  h2{font-size:clamp(1.5rem,3.2vw,2.15rem);font-weight:800;line-height:1.12;letter-spacing:-.03em;margin-bottom:.7rem;max-width:18em}
+  h3{font-size:1.02rem;font-weight:700;letter-spacing:-.01em;margin-bottom:.3rem}
+  .lede{font-size:1.05rem;color:var(--dim);max-width:44em;margin-bottom:2.4rem}
+  .lede b{color:var(--cream);font-weight:500}
+  em.c{font-style:normal;color:var(--cyan)}
+  em.g{font-style:normal;color:var(--green)}
+  em.a{font-style:normal;color:var(--amber)}
+
+  /* hero */
+  .hero{padding:5.5rem 0 4rem;border-bottom:1px solid var(--line)}
+  .hero .amberline{color:var(--amber);font-size:1.02rem;max-width:34em;margin-bottom:1.5rem}
+  .hero .big{font-size:clamp(1.15rem,2.3vw,1.5rem);font-weight:600;color:var(--cream);max-width:30em;line-height:1.35;margin-bottom:1.6rem;letter-spacing:-.02em}
+  .hero .body{font-size:1.05rem;color:var(--dim);max-width:40em}
+  .hero .body b{color:var(--cream);font-weight:500}
+
+  /* the device */
+  .rows{border-top:1px solid var(--line)}
+  .r{border-bottom:1px solid var(--line);padding:2.2rem 0;display:grid;grid-template-columns:1fr 1.35fr;gap:2.6rem;align-items:start}
+  .r-cv{position:relative}
+  .r-cv .tag{font-family:var(--mono);font-size:.64rem;color:var(--dimmer);margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem}
+  .r-cv .tag span{color:var(--coral)}
+  .r-cv .line{font-size:1.02rem;color:var(--dimmer);line-height:1.45;padding-left:.95rem;border-left:2px solid var(--line2)}
+  .r-cv .verdict{font-family:var(--mono);font-size:.64rem;color:var(--dimmer);margin-top:.75rem;padding-left:.95rem}
+  .r-real .tag{font-family:var(--mono);font-size:.64rem;color:var(--green);margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem}
+  .r-real p{font-size:1.02rem;color:var(--cream);line-height:1.62}
+  .r-real p + p{margin-top:.75rem}
+  .r-real .out{margin-top:1.05rem;display:flex;flex-wrap:wrap;gap:.55rem}
+  .pill{font-family:var(--mono);font-size:.7rem;color:var(--cyan);border:1px solid var(--line2);border-radius:2px;padding:.32rem .6rem;background:var(--bg2)}
+  .pill.g{color:var(--green)}
+
+  /* stat band */
+  .band{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:2.6rem}
+  .b{background:var(--bg2);padding:1.5rem 1.3rem}
+  .bv{font-size:2.05rem;font-weight:800;letter-spacing:-.035em;line-height:1;color:var(--cream)}
+  .bv.c{color:var(--cyan)} .bv.g{color:var(--green)}
+  .bl{font-size:.83rem;color:var(--dim);margin-top:.55rem;line-height:1.4}
+
+  /* charts */
+  .chart{margin-top:.4rem}
+  .ct{font-family:var(--mono);font-size:.66rem;color:var(--dim);margin-bottom:1.5rem}
+  .plot{position:relative}
+  .row{display:grid;grid-template-columns:220px 1fr;gap:1.2rem;align-items:center;margin-bottom:.6rem}
+  .rn{font-size:.86rem;color:var(--cream);text-align:right;line-height:1.3}
+  .rn em{display:block;font-style:normal;color:var(--dimmer);font-size:.72rem;margin-top:.15rem}
+  .track{position:relative;height:26px;display:flex;align-items:center;padding-right:4.6rem}
+  .bar{height:24px;background:var(--mark);border-radius:0 3px 3px 0;transition:background .15s}
+  .bar:hover{background:var(--cyan)}
+  .bv2{font-size:1rem;font-weight:700;color:var(--cream);margin-left:.7rem;white-space:nowrap;letter-spacing:-.02em}
+  .ax{display:grid;grid-template-columns:220px 1fr;gap:1.2rem;margin-top:.7rem}
+  .axl{position:relative;height:1.3rem;border-top:1px solid var(--line2);margin-right:4.6rem}
+  .tick{position:absolute;top:.32rem;font-family:var(--mono);font-size:.62rem;color:var(--dimmer);transform:translateX(-50%)}
+  .grids{position:absolute;inset:0 4.6rem 1.3rem 0;margin-left:calc(220px + 1.2rem);pointer-events:none}
+  .gl{position:absolute;top:0;bottom:0;width:1px;background:var(--line)}
+
+  /* dots */
+  .dd{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-top:.5rem}
+  .dh{font-family:var(--mono);font-size:.66rem;color:var(--dimmer);margin-bottom:.5rem}
+  .dn{font-size:1.9rem;font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:1rem}
+  .dn span{display:block;font-size:.8rem;font-weight:400;color:var(--dim);margin-top:.4rem;letter-spacing:0}
+  .dots{display:grid;grid-template-columns:repeat(20,1fr);gap:4px;max-width:330px}
+  .dots i{display:block;width:100%;aspect-ratio:1;border-radius:50%;background:var(--line2)}
+  .dots.on i{background:var(--cyan)}
+
+  /* flow */
+  .flow{border:1px solid var(--line);background:var(--bg2);padding:1.7rem 1.4rem 1rem;overflow-x:auto;margin-top:.5rem}
+  .flow svg{display:block;min-width:660px;width:100%;height:auto}
+
+  /* cards */
+  .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .g2{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .cd{background:var(--bg2);padding:1.7rem 1.45rem}
+  .cd .lab{font-family:var(--mono);font-size:.63rem;color:var(--cyan);margin-bottom:.75rem}
+  .cd .lab.g{color:var(--green)} .cd .lab.a{color:var(--amber)}
+  .cd p{font-size:.92rem;color:var(--dim);line-height:1.62}
+  .cd p + p{margin-top:.7rem}
+  .cd p b{color:var(--cream);font-weight:600}
+
+  /* scale */
+  .scale{position:relative;height:104px;margin-top:1.6rem}
+  .sx{position:absolute;left:0;right:0;top:68px;height:1px;background:var(--line2)}
+  .st{position:absolute;top:76px;font-family:var(--mono);font-size:.62rem;color:var(--dimmer);transform:translateX(-50%);white-space:nowrap}
+  .sm{position:absolute;top:0;height:74px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:.4rem}
+  .sm b{font-size:1.1rem;font-weight:800;letter-spacing:-.03em;color:var(--cream);white-space:nowrap}
+  .sm em{font-style:normal;font-size:.75rem;color:var(--dim);white-space:nowrap}
+  .sm i{display:block;width:11px;height:11px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px var(--bg)}
+
+  /* timeline */
+  .tl{border-top:1px solid var(--line);margin-top:.4rem}
+  .tr{display:grid;grid-template-columns:130px 1fr;gap:1.2rem;align-items:center;padding:.75rem 0;border-bottom:1px solid var(--line)}
+  .ty{font-family:var(--mono);font-size:.66rem;color:var(--dimmer);text-align:right}
+  .tb{font-size:.92rem;color:var(--cream)}
+  .tb span{color:var(--dim)}
+
+  .tgl{font-family:var(--mono);font-size:.66rem;color:var(--dimmer);background:none;border:1px solid var(--line2);border-radius:2px;cursor:pointer;padding:.5rem .8rem;margin-top:1.6rem}
+  .tgl:hover{color:var(--cyan);border-color:var(--cyan)}
+  table.d{border-collapse:collapse;width:100%;max-width:42em;margin-top:1.3rem;font-size:.87rem}
+  table.d th,table.d td{text-align:left;padding:.5rem 1rem .5rem 0;border-bottom:1px solid var(--line)}
+  table.d th{font-family:var(--mono);font-size:.62rem;color:var(--dimmer);font-weight:400}
+  table.d td{color:var(--dim)} table.d td:first-child{color:var(--cream)}
+  table.d td.n{font-variant-numeric:tabular-nums;text-align:right;color:var(--cream);font-weight:600}
+  .hide{display:none}
+
+  .cta{padding:5rem 0;text-align:center}
+  .cta h2{margin:0 auto .9rem;font-size:clamp(1.8rem,3.9vw,2.6rem)}
+  .cta p{color:var(--dim);max-width:34em;margin:0 auto 2rem;font-size:1.02rem}
+  .btn{display:inline-block;background:var(--cyan);color:var(--bg);font-weight:700;font-size:.95rem;padding:.95rem 1.9rem;border-radius:3px;text-decoration:none;transition:transform .12s}
+  .btn:hover{transform:translateY(-1px)}
+  .fine{font-size:.86rem;color:var(--dimmer);margin-top:1.4rem}
+  .fine a{color:var(--cyan);text-decoration:none}
+  footer{padding:2.5rem 0 4rem;font-family:var(--mono);font-size:.66rem;color:var(--dimmer);text-align:center;line-height:2}
+
+  @media(max-width:880px){
+    .r{grid-template-columns:1fr;gap:1.4rem}
+    .band,.g3,.g2{grid-template-columns:1fr 1fr}
+    .dd{grid-template-columns:1fr;gap:2rem}
+    .row,.ax{grid-template-columns:112px 1fr;gap:.7rem}
+    .grids{margin-left:calc(112px + .7rem);inset:0 3.2rem 1.3rem 0}
+    .track{padding-right:3.2rem}.axl{margin-right:3.2rem}
+    .rn{font-size:.74rem}.rn em{font-size:.66rem}
+    .tr{grid-template-columns:96px 1fr;gap:.7rem}
+    .dots{max-width:100%}
+  }
+</style>
+</head>
+<body>
+<div class="nav"><div class="nav-in">
+  <span class="logo">Rajesh Veedu</span>
+  <span class="nav-right"><span class="nav-r">Consulting portfolio</span><a class="nav-cta" href="#start">Start here</a></span>
+</div></div>
+<div class="wrap">
+<div class="hero"><div class="kicker">Consulting portfolio: Rajesh Veedu</div><h1>I find where customers quietly leave, and fix the system behind it.</h1><p class="lede" style="margin-top:1.4rem;margin-bottom:0">For founders who can feel the leak but cannot see where it starts. I start by finding it, with you, inside your own business.</p></div><div class="sec"><div class="kicker">Where it happens</div><div class="flow" style="min-height:260px"><svg viewBox="0 0 960 190" role="img" aria-label="Five stages of the customer journey, each with a red marker where customers quietly leave."><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="none" stroke="#3a4a5e" stroke-width="1.5"/></marker></defs><rect x="12" y="36" width="160" height="46" rx="3" fill="#1b1510" stroke="#3b2e22"/><text x="92" y="65" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="800" fill="#f0eee6">Sign up</text><path d="M92,84 L92,96" stroke="#d9635e" stroke-width="2"/><circle cx="92" cy="104" r="7" fill="#d9635e"/><text x="92" y="136" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#d9635e">never fully</text><text x="92" y="152" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#d9635e">onboarded</text><path d="M176,59 L198,59" stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)"/><rect x="202" y="36" width="160" height="46" rx="3" fill="#1b1510" stroke="#3b2e22"/><text x="282" y="65" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="800" fill="#f0eee6">Onboard</text><path d="M282,84 L282,96" stroke="#d9635e" stroke-width="2"/><circle cx="282" cy="104" r="7" fill="#d9635e"/><text x="282" y="136" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#d9635e">no one owns</text><text x="282" y="152" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#d9635e">the first 90 days</text><path d="M366,59 L388,59" stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)"/><rect x="392" y="36" width="160" height="46" rx="3" fill="#1b1510" stroke="#3b2e22"/><text x="472" y="65" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="800" fill="#f0eee6">Use</text><path d="M472,84 L472,96" stroke="#d9635e" stroke-width="2"/><circle cx="472" cy="104" r="7" fill="#d9635e"/><text x="472" y="136" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#d9635e">usage fades,</text><text x="472" y="152" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#d9635e">nobody notices</text><path d="M556,59 L578,59" stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)"/><rect x="582" y="36" width="160" height="46" rx="3" fill="#1b1510" stroke="#3b2e22"/><text x="662" y="65" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="800" fill="#f0eee6">Renew</text><path d="M662,84 L662,96" stroke="#d9635e" stroke-width="2"/><circle cx="662" cy="104" r="7" fill="#d9635e"/><text x="662" y="136" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#d9635e">renewal comes</text><text x="662" y="152" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#d9635e">as a surprise</text><path d="M746,59 L768,59" stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)"/><rect x="772" y="36" width="160" height="46" rx="3" fill="#1b1510" stroke="#3b2e22"/><text x="852" y="65" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="800" fill="#f0eee6">Refer</text><path d="M852,84 L852,96" stroke="#d9635e" stroke-width="2"/><circle cx="852" cy="104" r="7" fill="#d9635e"/><text x="852" y="136" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#d9635e">bad review posted,</text><text x="852" y="152" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="#d9635e">never answered</text></svg></div><p class="fine" style="margin-top:.8rem">This is where customers quietly leave.</p></div><div class="sec"><h2>The gap</h2><p class="lede">95% of B2B tech companies have an established Customer Success function. In every other industry, 62% are still only "adopting CS principles." (Gainsight CS Index, January 2025.)</p><p class="lede">Your customers leave quietly. Your team reacts to tickets. Nobody owns the system. That is the gap I close. I have closed it in software, AdTech, and operations-heavy businesses alike.</p></div><div class="sec"><h2>What I sell: the audit sprint</h2><p class="lede">A fixed-fee diagnostic, two to three weeks inside your company, ending in a 90-day fix plan your team can run. Audit first, then a retainer or a turnaround project, only if the audit earns it.</p><p class="lede">You will know in one engagement whether the bigger work is worth it.</p><div class="tl"><div class="tr"><div style="font-family:var(--mono);color:var(--cyan)">Week 1: Map</div><div>Every customer touchpoint mapped, inside your business.</div></div><div class="tr"><div style="font-family:var(--mono);color:var(--cyan)">Week 2: Diagnose</div><div>Leaks quantified, fixes sequenced by biggest risk first.</div></div><div class="tr"><div style="font-family:var(--mono);color:var(--green)">Week 3: Hand over</div><div>A 90-day plan your own people can run.</div></div></div></div><div class="sec"><div class="kicker">Proof</div><div class="chart"><div class="ct">Churn cut, percent</div><div class="plot"><div class="grids"><div class="gl" style="left:0%"></div><div class="gl" style="left:25%"></div><div class="gl" style="left:50%"></div><div class="gl" style="left:75%"></div><div class="gl" style="left:100%"></div></div><div class="row"><div class="rn">Replicon<em>global SaaS</em></div><div class="track"><div class="bar" style="width:97.0%"></div><span class="bv2">19.7%</span></div></div><div class="row"><div class="rn">SaaS company<em>$10M+ ARR, consulting client</em></div><div class="track"><div class="bar" style="width:88.7%"></div><span class="bv2">18%</span></div></div><div class="row"><div class="rn">Kaseya<em>worldwide, IT management</em></div><div class="track"><div class="bar" style="width:59.1%"></div><span class="bv2">12%</span></div></div><div class="ax"><div></div><div class="axl"><span class="tick" style="left:0%">0</span><span class="tick" style="left:25%">5</span><span class="tick" style="left:50%">10</span><span class="tick" style="left:75%">15</span><span class="tick" style="left:100%">20</span></div></div></div></div><div class="band" style="margin-top:2rem;grid-template-columns:repeat(2,1fr);max-width:36em"><div class="b"><div class="bv c">114%</div><div class="bl">Of quota, in a single year at Kaseya</div></div><div class="b"><div class="bv g">$3.03M</div><div class="bl">Closed in that year</div></div></div><ul class="lede" style="line-height:1.8;margin-top:1.6rem"><li>NRR up 12% at a $10M+ ARR SaaS company (consulting engagement)</li><li>Reversed five years of negative net growth inside twelve months ($24M ARR portfolio)</li><li>Owned the entire customer base at Kaseya, SMB and Enterprise, worldwide</li><li>Built the APAC Customer Success organization from zero</li></ul><p class="fine" style="margin-top:1rem">Client names withheld under NDA.</p></div><div class="sec"><h2>Live proof: the audit pack</h2><div class="flow"><svg viewBox="0 0 960 150" role="img" aria-label="A failed customer audit, then fixes done in order, then a system the production floor runs every day.">
+<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" fill="none" stroke="#3a4a5e" stroke-width="1.5"/></marker></defs>
+<rect x="12" y="40" width="250" height="70" rx="3" fill="#1b1510" stroke="#3b2e22"/>
+<text x="137" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-size="17" font-weight="800" fill="#f0eee6">Failed the audit</text>
+<text x="137" y="94" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#9aa6b6">A customer's vendor check</text>
+<path d="M266,75 L332,75" stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)"/>
+<rect x="338" y="40" width="250" height="70" rx="3" fill="#e0a458"/>
+<text x="463" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-size="17" font-weight="800" fill="#1b1510">Fixes, in order</text>
+<text x="463" y="94" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#eaf0fb">Biggest risks first</text>
+<path d="M592,75 L658,75" stroke="#3a4a5e" stroke-width="1.5" fill="none" marker-end="url(#ar)"/>
+<rect x="664" y="40" width="284" height="70" rx="3" fill="#1b1510" stroke="#5aa469" stroke-width="1.5"/>
+<text x="806" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-size="17" font-weight="800" fill="#5aa469">The floor runs it daily</text>
+<text x="806" y="94" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#9aa6b6">A process pack, in use</text>
+</svg></div><p class="lede" style="margin-top:1.6rem">A redacted 50-point audit pack from a live engagement with an organic food manufacturer. A failed vendor qualification audit became fixes in the right order, then a process pack the production floor runs daily. Built with a consulting partner. A larger project summary is being finalized. Available to walk through with you on the discovery call.</p><div style="margin-top:1.2rem"><table class="d"><tbody><tr><td>Vendor documentation</td><td><span style="color:#d9635e">&#9679;</span></td></tr><tr><td>Process controls</td><td><span style="color:#d9635e">&#9679;</span></td></tr><tr><td>Training records</td><td><span style="color:#d9a441">&#9679;</span></td></tr><tr><td>Hygiene checks</td><td><span style="color:#d9a441">&#9679;</span></td></tr><tr><td>Traceability</td><td><span style="color:#5aa469">&#9679;</span></td></tr></tbody></table><p class="fine" style="margin-top:.8rem">Illustrative categories. 50 findings, sequenced by risk. Red first.</p></div></div><div class="sec"><h2>Who is behind it</h2><p class="lede">22 years customer-facing, 15+ in CS and Operations. Built the APAC CS organization from zero at Spiceworks Ziff Davis. Owned P&amp;L for a $24M ARR portfolio at Replicon. At Kaseya, owned the entire customer base, SMB and Enterprise, worldwide, and closed $3.03M at 114% of a quota that rose 5% every quarter.</p></div><div class="cta" id="start">
+    <h2>Next step</h2>
+    <p>Ten questions, ten minutes. You will know in one call whether it is worth it.</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7zatzBqg1XjGwLzCKVeRte_0TqrOjMwcCDF5Z_5ymtOLUhQ/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" title="Ten questions">Loading</iframe>
+  </div>
+</div>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "9f12807207844efbac297104a634bdec"}'></script>
+</body>
+</html>
